@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Store data</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="main-container">
+            <h1> Super Market </h1>
+            <div class="form-container">
+                
+                <div class="form">
+                    <form  autocomplete="off" id="form">
+                        <div>
+                            <label>Product Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                            <input type="text" name="productName" id="productName">
+                        </div>
+                        <div>
+                            <label>Product Code</label>
+                            <input type="text" name="pCode" id="pCode">
+                        </div>
+                        <div>
+                            <label>Company</label>
+                            <input type="text" name="seller" id="seller">
+                        </div>
+                        <div>
+                            <label>Price</label>
+                            <input type="text" name="price" id="price">
+                        </div>
+                        <div  class="form-action-buttons">
+                            <input type="submit" value="Add Product">
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+            <div class="products-data">
+                <h1> Details of products in stock</h1>
+                <table class="list" id="productList">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Code</th>
+                            <th>Seller</th>
+                            <th>price </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    
+                    </tbody>
+                </table>
+    
+            </div>
+        </div>
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>
