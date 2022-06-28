@@ -37,11 +37,13 @@ h1{
     font-family: "Poppins",sans-serif;
     font-size: 1.5rem;
     color: rgb(247, 56, 56);   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 input[type=text], input[type=number] {
-    padding: 20px;
-    margin: 20px;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -53,6 +55,7 @@ input[type=text], input[type=number] {
 }
 .form-action-buttons{
     padding-top: 30px;
+    padding-left: 25px;
 }
 .form-action-buttons input{
     height: 60px;
@@ -137,10 +140,30 @@ a:hover{
     width:380px;
 
    }
-    .form{
-        width: 100%;
+    .form {
+        width: 380px;
         font-size: 1rem;
+    
     }
+    input[type=text], input[type=number]{
+        width:380px;
+    }
+    
+    .form input{
+        width:300px;
+        margin-left: 20px;
+    }
+    .form label{
+        margin-left: 20px;
+    }
+    .form-action-buttons{
+        padding-left: 0px;
+    }
+    .form-action-buttons input{
+        width:360px;
+        margin-left:8px;
+    }
+
     .list{
         width: 100%;
         font-size: 1rem;
