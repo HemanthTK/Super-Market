@@ -1,188 +1,156 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
-body{
-    height: 100%;
+*{
+    box-sizing: border-box;
     font-family: "Poppins",sans-serif;
+}
+body{
     background:#f7f7f7;
-  
+    height: 100%;
+    width: 100%;
 }
 .main-container{
-    width: 100%;
-    height: 1200px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
-h1{
-    text-align: center;
-    color: #666;
-    padding: 5px;
-}
-
 .form-container{
-    width :600px;
-    height:500px;
-    background-color:rgb(248, 219, 219);;
-    border-radius: 15px;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   width: 50%;
+   height: 60vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color:rgb(248, 219, 219);
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   color: rgb(247, 56, 56);
+   border-radius: 2em;
+   
 }
- .form {
-    
-    width: 500px;
-    height:500px ;
-    font-family: "Poppins",sans-serif;
+.form{
+  width: 100%;
+  height: 100%;
+}
+#form{
+    width: 100%;
+    display: block;
+    padding: 2.5rem;
+    padding-top: 1rem;
     font-size: 1.5rem;
-    color: rgb(247, 56, 56);   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+   
 }
-
 input[type=text], input[type=number] {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    border: none;
-        
+    border-radius: .6em;
+    line-height: 2rem;
+    border: 1px solid #666;
+    font-size: 1.2rem;
+}
+h1{
+    color: #666;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+label{
+    font-size: 1.2rem;
+    font-weight: 1000;
 }
 .form-action-buttons{
-    padding-top: 30px;
-    padding-left: 25px;
-}
-.form-action-buttons input{
-    height: 60px;
     width: 100%;
-    border-radius: 10px;
-    border: 2px solid rgb(247, 56, 56);
+}
+input[type=submit]{
+    width: 80%;
+    height: 3rem;
+    margin: 1.5rem;
+    margin-left: 10%;
     text-align: center;
-    background-color:  #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border:2px solid rgb(247, 56, 56);
     color: rgb(247, 56, 56);
-    font-size: 1.5rem;
-    transition: .3s linear;
-    
+    border-radius: 10em;
+    transition: all .5s ease-in;
 }
-.form-action-buttons input:hover{
-    background-color:rgb(247, 56, 56) ;
+input[type=submit]:hover{
+    background-color:  rgb(247, 56, 56);
     color: #fff;
-    cursor: pointer;
-}
-.products-data{
-   
-    width: 100%;
-    height: 1200px;
-   
-}
-td, th {
-    border:none;
-    text-align: left;
-    padding: 8px;
-
-}
-tr:nth-child(even),table.list {
-    background-color:rgb(248, 219, 219);
-    color: #666;
-}
-tr:nth-child(odd),table.list {
-    background-color:#fff ;
-    color: black ;
-}
-
-.list{
-    width: 100%;
-    font-size: 1.5rem;
-    color: #999;
-}
-.list thead>tr{
-    color: rgb(247, 56, 56);
-    background-color: rgb(248, 219, 219);
-    
-}
-.list tbody{
-    font-size: 1rem;;
 }
 .hide{
     display: none;
-}
-a{
-   font-size: 1.2rem;
-    padding: 15px;
-    color: lightseagreen;
-}
-a:hover{
-    cursor: pointer;
-    text-decoration: underline;
-    color: red;
 }
 .validation-error{
     color: black;
     font-size: 1rem;
     font: bold;
     font-weight: 1000;
+} 
+
+.products-data{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1.5em;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
 }
-@media(max-width:540px){
-    body{
-        width:450px;
-        
-    }
-    .main-container{
-        width: 450px;
-     
-    }
-   .form-container{
-    width:380px;
+.list{
+    width: 100%;
+}
+th{
+    font-size: 1.5rem;
+    color: rgb(247, 56, 56);
+    background-color: rgb(248, 219, 219);
+}
+tbody > tr{
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius:1.5em ;
+}
+tbody > tr:nth-child(even),table.list {
+    background-color:rgb(248, 219, 219);
+    color: #666;
+}
+tbody > tr:nth-child(odd),table.list {
+    background-color:#fff ;
+    color: black ;
+}
+a{
+    font-size: 1.2rem;
+     padding: 15px;
+     color: lightseagreen;
+ }
+ a:hover{
+     cursor: pointer;
+     text-decoration: underline;
+     color: red;
+ }
 
-   }
-    .form {
-        width: 380px;
+ @media(max-width:900px){
+    .form-container{
+        width:80%
+        height: 80vh;
+    }
+    label{
+        font-size: .9rem;
+        font-weight: 1000;
+    }
+    .validation-error{
+        font-size: .9rem;
+    } 
+    h1{
+        font-size: 1.5rem;
+    }
+    th{
         font-size: 1rem;
-    
     }
-    input[type=text], input[type=number]{
-        width:380px;
-    }
-    
-    .form input{
-        width:300px;
-        margin-left: 20px;
-    }
-    .form label{
-        margin-left: 20px;
-    }
-    .form-action-buttons{
-        padding-left: 0px;
-    }
-    .form-action-buttons input{
-        width:360px;
-        margin-left:8px;
-    }
-
-    .list{
-        width: 100%;
-        font-size: 1rem;
-        color: #999;
-    }
-    .list tbody{
-        font-size: 0.8rem;;
-    }
-    .products-data{
-        width: 420px;
+    tbody > tr{
+        font-size: .9rem;
     }
     a{
-        font-size: 0.8rem;
-         padding: 5px;
-         color: lightseagreen;
+        font-size: .9rem;
     }
-    h1{
-        font-size: 1.2rem;
-    }
-   
+ }
 
-}
